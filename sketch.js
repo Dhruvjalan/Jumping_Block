@@ -36,7 +36,7 @@ function setup(){
     ed3 = createSprite(699,300,2,600);
     ed3.visible = false;
      
-    music.play(true);
+    music.play();
 
 
 

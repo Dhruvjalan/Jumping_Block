@@ -1,3 +1,5 @@
+
+var state = 0;
 function bounceOff(rect1, rect2){
   // comdition for touching an object
     if(rect1.x - rect2.x <= rect2.width/2 + rect1.width/2
@@ -13,7 +15,10 @@ function bounceOff(rect1, rect2){
 
         ed1.shapeColor = rect2.shapeColor;
        ed2.shapeColor = rect2.shapeColor;
-       
+       if(state===0){
+         music.play();
+         state = 1;
+       }
       ed3.shapeColor = rect2.shapeColor;     
       return true 
         
